@@ -8,8 +8,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "test": "jest --watchAll",
-    "deploy:web:prod": "bunx eas deploy --prod",
-    "deploy:web:preview": "bunx eas deploy"
+    "deploy:web:prod": "bunx expo export -p web && bunx eas deploy --prod",
+    "deploy:web:preview": "bunx expo export -p web && bunx eas deploy"
   },
   "jest": {
     "preset": "jest-expo"
