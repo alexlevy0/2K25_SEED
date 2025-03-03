@@ -7,7 +7,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "deploy:web:prod": "bunx eas deploy --prod",
+    "deploy:web:preview": "bunx eas deploy"
   },
   "jest": {
     "preset": "jest-expo"
@@ -29,7 +31,8 @@
     "react-native-reanimated": "~3.16.1",
     "react-native-safe-area-context": "4.12.0",
     "react-native-screens": "~4.4.0",
-    "react-native-web": "~0.19.13"
+    "react-native-web": "~0.19.13",
+    "react-server-dom-webpack": "19.0.0-rc-6230622a1a-20240610"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
